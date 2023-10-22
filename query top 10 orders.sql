@@ -1,0 +1,5 @@
+SELECT id, COUNT(DISTINCT id), 
+MAX(price) 
+FROM orders 
+GROUP BY id
+LIMIT 10;
